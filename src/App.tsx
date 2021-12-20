@@ -1,13 +1,36 @@
-import React from 'react';
-import TableList from './pages/tableList';
-import "./App.scss"
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Panton from "./pages/pantonColor";
+import TableList from "./pages/tableList";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <TableList />
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">TableList</Link>
+            </li>
+            <li>
+              <Link to="/Panton">Panton</Link>
+            </li>
+            <li>
+              <Link to="/users">Users</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<TableList />} />
+          <Route path="/Panton" element={<Panton />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
-export default App;
