@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import OperationChain from "./Components/OperationChain";
 import Panton from "./pages/pantonColor";
 import TableList from "./pages/tableList";
 
@@ -21,7 +22,7 @@ export default function App() {
               <Link to="/Panton">Panton</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/opeartion-chain">opeartion-chain</Link>
             </li>
           </ul>
         </nav>
@@ -29,6 +30,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<TableList />} />
           <Route path="/Panton" element={<Panton />} />
+          <Route path="/opeartion-chain" element={<OperationChain />} />
         </Routes>
       </div>
     </Router>
