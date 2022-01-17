@@ -13,3 +13,12 @@
 
 #### 事件实现路由跳转
 history.back();
+
+#### 连级运算符 ? ?? || && 处理
+* 0 undefined null NaN "" 
+    * 布尔值均为false: Boolean(0 undefined null NaN '') -> false
+* Js 和 ReactNode{}
+    *  取决于布尔值
+        * ***|| 和 ?(三元符)*** : 布尔值是false -> 取符号后的数值. 和&&完全对立
+        * ***&&*** : 布尔值是true -> 取符号后的数值. 和 || ? 完全对立
+    * ***??*** :不取决于boolean，取决于是否存在。?? 只有null和undefined会取后的值
