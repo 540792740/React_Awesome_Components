@@ -22,3 +22,18 @@ history.back();
         * ***|| 和 ?(三元符)*** : 布尔值是false -> 取符号后的数值. 和&&完全对立
         * ***&&*** : 布尔值是true -> 取符号后的数值. 和 || ? 完全对立
     * ***??*** :不取决于boolean，取决于是否存在。?? 只有null和undefined会取后的值
+
+#### Reduce()
+* 累加器
+* 二维数组变成一维数组
+* 计算出现次数
+* 按属性对object分类
+* 数组去重:set 会更快
+* 按顺序运行Promise
+* 使用 reduce实现map
+
+#### Call()： fun.call(thisArg, arg1, arg2, ...)
+* null、undefined 的this指向window（非严格模式）
+* 原始值(string, number，boolean)会指向原始值的包装对象
+* 使用场景
+    * 

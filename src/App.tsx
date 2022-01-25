@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import OperationChain from "./Components/OperationChain";
-import Panton from "./pages/pantonColor";
+import Panton from "./pages/basicJS";
 import TableList from "./pages/tableList";
 
 export default function App() {
