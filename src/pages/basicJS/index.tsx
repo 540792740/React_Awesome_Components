@@ -1,8 +1,10 @@
 /* eslint-disable no-extend-native */
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+
 interface PantonProps {
 
 }
+
 function Panton(props: PantonProps) {
 
     useEffect(() => {
@@ -12,6 +14,7 @@ function Panton(props: PantonProps) {
         groupBy();
         avoidDuplicate();
         runPromiseInSequence();
+        DateToString();
     }, []);
 
     // 累加器
@@ -116,7 +119,34 @@ function Panton(props: PantonProps) {
         res.then((resolve: any) => console.log(resolve))
         return res
     }
+    // 累加器
+    const DateToString = () => {
+        var a = new Date();
+        // 1515143895500
+        console.log('DateToString', a.valueOf());
+        console.log('DateToString', a.toString());
+        let b: any = {};
+        let c: any = {};
+        console.log(b + c);
 
+        var num = new Number('123').valueOf();
+        console.log(num);
+
+        var str = new String('12df').valueOf();
+        console.log(str); // '12df'
+
+        var bool = new Boolean('fd').valueOf();
+        console.log(bool);  // true
+
+        var date = new Date().valueOf();
+        console.log(date);  // 1515143895500
+
+        var arr = new Array();
+        console.log(arr === arr.valueOf());  // true
+
+        var obj = new Object({}).valueOf();
+        console.log(obj === obj.valueOf());  // true
+    }
 
     // 使用 reduce实现map
     // const countTimes = () => {
