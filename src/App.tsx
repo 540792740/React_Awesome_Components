@@ -9,7 +9,6 @@ import OperationChain from "./Components/OperationChain";
 import Panton from "./pages/basicJS";
 import BasicTs from "./pages/basicTs";
 import CssBasic from "./pages/css";
-import TableList from "./Components/table";
 
 export default function App() {
   return (

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import BubblingCapture from './bubbling';
 import './index.scss';
 
 interface CssProps {
@@ -15,6 +16,8 @@ const CssBasic: React.FC<CssProps> = () => {
             <div className='space-nowrap'> space       this is nowrap </div>
             <div className='space-pre'> space       this is pre </div>
         </div>
+
+        <BubblingCapture />
     </div>
 }
 
