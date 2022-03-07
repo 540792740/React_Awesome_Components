@@ -1,0 +1,1 @@
+export type ColumnType = "search" | "checkBox" | "datePicker" | "radio";

@@ -9,7 +9,7 @@ import OperationChain from "./Components/OperationChain";
 import Panton from "./pages/basicJS";
 import BasicTs from "./pages/basicTs";
 import CssBasic from "./pages/css";
-import TableList from "./pages/tableList";
+import TableList from "./Components/table";
 
 export default function App() {
   return (
@@ -36,7 +36,7 @@ export default function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<TableList />} />
+          {/* <Route path="/" element={<TableList />} /> */}
           <Route path="/Panton" element={<Panton />} />
           <Route path="/opeartion-chain" element={<OperationChain />} />
           <Route path="/basic-ts-ways" element={<BasicTs />} />
