@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import BubblingCapture from './bubbling';
 import './index.scss';
 
@@ -6,10 +6,7 @@ interface CssProps {
 
 }
 
-
 const CssBasic: React.FC<CssProps> = () => {
-
-
     return <div className='css-basic-container'>
         <div className='space-container'>
             <div className='space-normal'> space       this is normal </div>

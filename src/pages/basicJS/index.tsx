@@ -129,22 +129,22 @@ function Panton(props: PantonProps) {
         let c: any = {};
         console.log(b + c);
 
-        var num = new Number('123').valueOf();
+        var num = Number('123').valueOf();
         console.log(num);
 
-        var str = new String('12df').valueOf();
+        var str = String('12df').valueOf();
         console.log(str); // '12df'
 
-        var bool = new Boolean('fd').valueOf();
+        var bool = Boolean('fd').valueOf();
         console.log(bool);  // true
 
         var date = new Date().valueOf();
         console.log(date);  // 1515143895500
 
-        var arr = new Array();
+        var arr = [];
         console.log(arr === arr.valueOf());  // true
 
-        var obj = new Object({}).valueOf();
+        var obj = Object({}).valueOf();
         console.log(obj === obj.valueOf());  // true
     }
 

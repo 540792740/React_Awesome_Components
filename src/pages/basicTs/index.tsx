@@ -17,8 +17,9 @@ function BasicTs(props: PantonProps) {
     }
 
     // 函数没有返回值 void 
-    function noReturn<Type>(arg: Type): void {
-    }
+    // function noReturn<Type>(arg: Type): void {
+    //     return null
+    // }
     // 使用 reduce实现map
     // const countTimes = () => {
 

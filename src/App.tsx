@@ -9,6 +9,8 @@ import OperationChain from "./Components/OperationChain";
 import Panton from "./pages/basicJS";
 import BasicTs from "./pages/basicTs";
 import CssBasic from "./pages/css";
+import ReactComponents from "./pages/ReactComponents";
+import 'antd/dist/antd.css';
 
 export default function App() {
   return (
@@ -31,6 +33,10 @@ export default function App() {
             <li>
               <Link to="/css-basic">basic Css</Link>
             </li>
+            <li>
+              <Link to="/components">React Components</Link>
+            </li>
+
           </ul>
         </nav>
 
@@ -40,7 +46,7 @@ export default function App() {
           <Route path="/opeartion-chain" element={<OperationChain />} />
           <Route path="/basic-ts-ways" element={<BasicTs />} />
           <Route path="/css-basic" element={<CssBasic />} />
-
+          <Route path="/components" element={<ReactComponents />} />
         </Routes>
       </div>
     </Router>
