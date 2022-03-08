@@ -12,7 +12,7 @@ const MemoChild = (props: MemoChildProps) => {
     const [, setRandom] = useState<number>(0); //{1}
 
     function getState() {  //{2}
-        console.log("消耗性能的计算"); //{3}
+        console.log("性能的计算"); //{3}
         let temp = 0;
         for (let index = 0; index < 1000; index++) {
             temp += index;

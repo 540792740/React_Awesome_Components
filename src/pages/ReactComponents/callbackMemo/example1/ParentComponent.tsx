@@ -1,7 +1,7 @@
 
 
 import { Button, Divider, Tag } from 'antd';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Child from './childComponent/Child';
 import MemoChild from './memoChild/MemoChild';
 import './ParentComponent.scss'
@@ -31,7 +31,7 @@ function ParentComponent(props: ParentComponentProps) {
 
             <Divider orientation="left">子组件↓</Divider> {/* {3} */}
             <Child state={random} fn={memoizedFn} /> {/* + {7} */}
-            <MemoChild state={random} fn={memoizedFn} /> {/* + {8} */}
+            <MemoChild state={random} fn={memoizedFn} /> {/* + {} */}
 
         </div >
     )
