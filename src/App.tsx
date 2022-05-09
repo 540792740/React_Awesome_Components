@@ -9,7 +9,7 @@ import OperationChain from "./Components/OperationChain";
 import Panton from "./pages/basicJS";
 import BasicTs from "./pages/basicTs";
 import CssBasic from "./pages/css";
-import ReactComponents from "./pages/ReactComponents";
+import ReactComponents from "./pages/react-components";
 import 'antd/dist/antd.css';
 
 export default function App() {
