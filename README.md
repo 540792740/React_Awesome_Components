@@ -1,7 +1,14 @@
-#### 表格填充，form + antd table
-* 路径： pathpages/tableList
-* 表格在450px 高度内可以滑动 `scroll={{ y: "450px" }}`
+#### src/pages
+* react-components:
+    * useCallback & useMemo
+    * 倒计时
 
+#### Axios
+* adapter: 发送http请求或者ajax请求
+* cancel: 取消
+* /core/axios: 构建axios的构造函数
+* axios.js:入口文件
+    * 
 #### nvm node版本管理器
 * 安装nvm: 会自动把路径驾到 .bash_profile 文件中<br/>
  `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash`    
